@@ -1,5 +1,7 @@
 import React from 'react'
-import Head from 'next/head';
+import Head from 'next/head'
+
+import '../styles/global.css'
 
 const Home: React.FC = () => {
   return (
@@ -13,4 +15,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home;
+export default Home
