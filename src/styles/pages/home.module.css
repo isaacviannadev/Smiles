@@ -1,0 +1,77 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.container .logoBg {
+  position: absolute;
+  top: -80px;
+  left: -250px;
+  width: 1200px;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.container .formContainer {
+  padding: 12rem 3rem 3rem;
+  border: 1px solid red;
+  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  background: var(--bgComponents);
+  border: 1px solid var(--secondary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  position: relative;
+}
+
+.container .formContainer .logoForm {
+  position: absolute;
+  top:-100px
+}
+
+.container .formContainer h1 {
+  text-align: center;
+}
+
+.container .formContainer .form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .formContainer .form input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  color: var(--darkText);
+  border: none;
+  padding:0 1rem;
+}
+
+.container .formContainer .form button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  color: var(--principalLight);
+  border: none;
+  margin: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: var(--principal)
+}
+
+.container .formContainer .form a{
+  margin: 24px 0 0 0 ;
+
+}
+
+
+

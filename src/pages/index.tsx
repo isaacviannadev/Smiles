@@ -1,17 +1,38 @@
-import React from 'react'
+import { Form } from '@unform/web'
 import Head from 'next/head'
+import React from 'react'
+import styles from '../styles/pages/home.module.css'
 
-import '../styles/global.css'
 
 const Home: React.FC = () => {
+  function handleSubmit(data) {
+    console.log(data)
+
+  }
+
+  // function goDash() {
+  //   if (data )
+  // }
   return (
-    <div>
-      <Head>
+    <>
+    <Head>
         <title>Create Next App</title>
       </Head>
 
-      <main className=""></main>
-    </div>
+      <div className={styles.container}>
+        <img className={styles.logoBg} src="logosymbol.svg" alt="" />
+
+          <main className={styles.formContainer}>
+          <img className={styles.logoForm} src="logosymbol.svg" alt="" />
+          <h1>Acessar</h1>
+          <Form  className={styles.form} onSubmit={handleSubmit} >
+            <input type="text" placeholder="CPF" id="cpf" />
+           <button type="submit" onClick="/dashboard">Entrar</button>
+          <a href="">Esqueci minha senha</a>
+          </Form>
+          </main>
+        </div>
+    </>
   )
 }
 

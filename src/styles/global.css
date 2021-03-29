@@ -1,0 +1,53 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --principal: #FF5297;
+  --secondary: #565197;
+
+  --principalLight: #FFE4EF;
+
+  --bG: #FFFBFC;
+  --bgComponents: #FBFBFB;
+  --darkText: #004969;
+}
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background-color: var(--bG);
+  color: var(--darkText);
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem 'Comfortaa', sans-serif;
+}
+
+input{
+  background-color: var(--principalLight);
+}
+
+button, a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
